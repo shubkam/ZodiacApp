@@ -20,19 +20,23 @@
 	     	</div>  			
 		</nav>
 	<body>
-	<div class="container">
-		<h1>Welcome to Zodiac App</h1>
+	<div class="container">		
 		<div class="row">
 			<div class="col-md-4">
 				<img src="images/zodiac-signs-set.jpg" class="img-responsive"/>
 				<hr>
-				<form>
-					<input type="text" id="txtZodiac" placeholder="Type zodiac name" class="form-control"/><br>
-					<button class="btn btn-success">Find</button>
-				</form>
+				<input type="text" id="txtZodiac" placeholder="Type zodiac name" class="form-control"/><br>
+				<button class="btn btn-success" onclick="getDescription();">Find</button>
+					
 			</div>
 			<div class="col-md-4">
-				
+				<header>
+					<h2 id="name"></h2>
+					<h5 id="month"></h5>
+				</header>
+				<img id="img_zodiac"/>
+				<p id="p_Zodiac_desc"></p>
+
 			</div>
 		</div>
 	</div>

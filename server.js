@@ -1,5 +1,5 @@
 // create const and assign the express module to it
-express = require('express') 
+const express = require('express');
 
 const app = express();
 
