@@ -111,7 +111,18 @@ function getDescription(){
 			document.getElementById("name").innerHTML = zodiacArr[i].name;
 			document.getElementById("month").innerHTML = zodiacArr[i].month;
 			document.getElementById("img_zodiac").src = zodiacArr[i].image;
-			document.getElementById("p_Zodiac_desc").innerHTML = zodiacArr[i].description;	
+			document.getElementById("p_Zodiac_desc").innerHTML = "";
+			document.getElementById("p_Zodiac_desc").style = "";
+			document.getElementById("p_Zodiac_desc").innerHTML = zodiacArr[i].description;
+			break;	
+		}
+		else
+		{
+			document.getElementById("name").innerHTML = "";
+			document.getElementById("month").innerHTML = "";
+			document.getElementById("img_zodiac").src = "";
+			document.getElementById("p_Zodiac_desc").innerHTML = "No such zodiac sign exists."
+			document.getElementById("p_Zodiac_desc").style = "color:red;font-weight:bold;"
 		}
 	}
 	
