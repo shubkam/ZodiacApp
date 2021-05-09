@@ -5,9 +5,9 @@ const app = express();
 
 // app means the express module. We use the app const to use methods from the express module.
 // We create a folder called client in the ZodiacApp dir to store our front end files. Now our back-end is connected to our front-end.
-app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/client'))
 
-app.use(requireHTTPS);
+//app.use(requireHTTPS);
 
 // set up an environment variable for the port for deployment and 3000 for running on localhost
 const port = process.env.PORT || 3000;
