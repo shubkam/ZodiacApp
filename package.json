@@ -1,6 +1,9 @@
 {
   "name": "zodiacapp",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.16.1"
+  },
   "description": "Making a Zodiac App",
   "main": "server.js",
   "scripts": {
